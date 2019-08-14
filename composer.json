@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Nortoneo_TwoFactorAuth",
+    "type": "magento-module",
+    "license": "http://www.opensource.org/licenses/bsd-license.php",
+    "homepage": "",
+    "description": "Nortoneo TwoFactorAuth module helps you secure your admin panel from unauthorized access. Admin users will be able to set up two factor authorization.",
+    "authors": [
+    {
+        "name": "Lukasz Szczedzina",
+        "email": "contact@nortoneo.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

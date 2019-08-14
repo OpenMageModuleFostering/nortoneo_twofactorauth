@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<layout>
+    <nortoneo_twofactorauth_login_index>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="adminhtml/template" name="two_factor_authenticate_form"
+                   template="nortoneo/twofactorauth/login.phtml"/>
+        </block>
+    </nortoneo_twofactorauth_login_index>
+</layout>

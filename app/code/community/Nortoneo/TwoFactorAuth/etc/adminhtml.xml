@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<config>
+    <menu>
+        <system>
+            <children>
+                <nortoneo_twofactor_auth translate="title">
+                    <title>Two Factor Authentication</title>
+                    <action>nortoneo_twofactorauth/userSettings</action>
+                    <sort_order>100</sort_order>
+                </nortoneo_twofactor_auth>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <nortoneo_twofactor_auth translate="title">
+                                <title>Two Factor Authentication</title>
+                            </nortoneo_twofactor_auth>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

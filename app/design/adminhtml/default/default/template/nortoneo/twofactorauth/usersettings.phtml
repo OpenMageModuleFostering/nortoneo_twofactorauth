@@ -1,0 +1,35 @@
+<?php
+$helper = Mage::helper('nortoneo_twofactorauth');
+/** @var Nortoneo_TwoFactorAuth_Model_UserSettings $settings */
+$settings = $this->getUserSettingsModel();
+?>
+<div class="entry-edit">
+    <?php echo $this->getFormHtml();?>
+</div>
+<?php echo $this->getChildHtml('form_after');?>
+
+<div class="box-left">
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-account"><?php echo $helper->__('Mobile application setup') ?></h4>
+        </div>
+        <div class="fieldset">
+            <table cellspacing="0" class="form-list">
+                <tr>
+                    <td class="label"><label>Your secret key</label></td>
+                    <td class="value"><strong><?php echo $settings->getSecret(); ?></strong></td>
+                </tr>
+                <tr>
+                    <td class="label"><label><?php echo $helper->__('QR Code for mobile app') ?></label></td>
+                    <td class="value"><img src="<?php echo $settings->getQRCodeGoogleUrl(); ?>" /></td>
+                </tr>
+            </table>
+            <p><?php echo $helper->__('Install Google Authenticator app to generate tokens on your smartphone.') ?></p>
+            <p><?php echo $helper->__('Available for') ?>
+                <a href="https://m.google.com/authenticator" target="_blank">Android</a>
+                <a href="https://itunes.apple.com/pl/app/google-authenticator/id388497605" target="_blank">iOS</a>
+                Blackberry
+            </p>
+        </div>
+    </div>
+</div>
